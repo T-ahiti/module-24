@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">\
+    <style>
+      li{
+        color: green
+      }
+    </style>
 </head>
 
 <body>
@@ -14,12 +19,37 @@
     </header>
 
     <main>
-     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid corrupti provident cupiditate ratione quis? Cupiditate, voluptatem? Dicta excepturi dolore rerum.</p>
+     
+      <section>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid corrupti provident cupiditate ratione quis? Cupiditate, voluptatem? Dicta excepturi dolore rerum.</p>
+         <li>Lorem, ipsum dolor.</li>
+         <li>Soluta, tempore maiores!</li>
+         <li>Beatae, reiciendis hic.</li>
+         <li>Mollitia, blanditiis corrupti!</li>
+      </section>
+      
+      <section>
+        <h1>fruits i like</h1>
+        <li>Lorem, ipsum.</li>
+        <li>Perferendis, quia.</li>
+        <li>Dolorum, accusantium.</li>
+        <li>Ipsum, explicabo!</li>
+      </section>
+     
     </main>
 
     <footer>
 
     </footer>
+
+     <script src="dom.js"></script>
+     <script>
+      const liCollection = document.getElementsByTagName('li')
+      // console.log(liCollection)
+      for(const li of liCollection){
+        console.log(li)
+      }
+     </script>
 </body>
 
 </html>
