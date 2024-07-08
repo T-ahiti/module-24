@@ -29,7 +29,7 @@
          <li>Mollitia, blanditiis corrupti!</li>
       </section>
 
-      <section>
+      <section >
         <h1 id="fruits">fruits i like</h1>
         <li>Lorem, ipsum.</li>
         <li>Perferendis, quia.</li>
@@ -37,15 +37,14 @@
         <li>Ipsum, explicabo!</li>
       </section>
 
-      <section>
-        <h1 class="places">places i like to visit</h1>
+      <section class="places">
+        <h1 >places i like to visit</h1>
         <li>Lorem, ipsum dolor.</li>
         <li>Voluptate, aspernatur fuga.</li>
         <li>Repudiandae, minima eum!</li>
         <li>Labore, harum consectetur?</li>
         <li>Accusamus, eius sint?</li>
       </section>
-     
     </main>
 
     <footer>
@@ -63,6 +62,9 @@
       // const getFruit = document.getElementById('fruits')
       // console.log(getFruit)
 
+      const getFruit = document.getElementsByClassName('places')[0].innerHTML =    '<h2>ABC Wow DOM is changing</h2>'
+      console.log(getFruit)
+
       
       // const someLi = document.querySelectorAll('.places li')
       // for(const li of someLi){
@@ -71,10 +73,10 @@
 
 
     
-      const someLi = document.querySelector('.places li')
-      for(const li of someLi){
-        console.log(li.innerText)
-      }
+      // const someLi = document.querySelector('.places li')
+      // for(const li of someLi){
+      //   console.log(li.innerText)
+      // }
      </script>
 </body>
 
